@@ -1,0 +1,61 @@
+{
+  "tipuri": {
+    "foto.jpg": "jpeg",
+    "ascuns.png": "png"
+  },
+  "strings": [
+    "IHDR",
+    "IDATx",
+    "@]m\\",
+    "B`s~5xg",
+    "u@_`3",
+    "^a6uk",
+    "pAS`",
+    "E]9\"",
+    "^F'uk",
+    "cu=Q",
+    "3,@R`",
+    "v7Q7",
+    "?wL`",
+    "v7Q7",
+    "|%0z",
+    "V`to7",
+    "I`Zu",
+    "J7i!5",
+    "k!F]",
+    "CKH=",
+    "-pE])p'",
+    "##} ",
+    "Z=?\"",
+    "~D]X",
+    "nBC`",
+    "sPg>",
+    "L7oj8",
+    "Qu|4",
+    "n60v",
+    "U[u_",
+    "2oa1",
+    "e-8k",
+    "IEND",
+    "secret.txtFLAG{arhiva_ascunsa_la_coada}",
+    "secret.txtPK"
+  ],
+  "metadate": {
+    "Model": "Camera virtuala",
+    "DateTime": "2026:10:20 12:00:00",
+    "Make": "Laborator demonstrativ",
+    "GPS": {
+      "latitudine": 47.019999999999996,
+      "longitudine": 28.83
+    }
+  },
+  "arhiva": {
+    "offset": 2772,
+    "fisiere": [
+      "secret.txt"
+    ],
+    "continut": {
+      "secret.txt": "FLAG{arhiva_ascunsa_la_coada}\n"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+s = 'Salut'
+b = b'Salut'
+b[0] = 83
+b.hex() = 53616c7574
+bytes.fromhex(b.hex()) = b'Salut'

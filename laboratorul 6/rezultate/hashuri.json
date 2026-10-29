@@ -1,0 +1,19 @@
+{
+  "hashuri": [
+    {
+      "hash": "7588b708ad2c6da1742cb10713659bdf",
+      "algoritm": "md5",
+      "parola": "laborator6"
+    },
+    {
+      "hash": "77862b117c20a39a99f3378e642ea59193c16dab",
+      "algoritm": "sha1",
+      "parola": "parola123"
+    },
+    {
+      "hash": "f7f7305d27a7a955fa5386b823ea5c6f1b2a9ab47332f4a1cd47b95117fcb890",
+      "algoritm": "sha256",
+      "parola": "securitate"
+    }
+  ]
+}

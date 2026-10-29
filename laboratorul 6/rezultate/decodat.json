@@ -1,0 +1,19 @@
+{
+  "strat": "url",
+  "straturi": [
+    {
+      "strat": "url",
+      "rezultat": "NDY0YzQxNDc3YjczNzQ3MjYxNzQ3NTcyNjk2YzY1NWY2MTc1NWY2NjZmNzM3NDVmNjQ2NTYzNmY2NDYxNzQ2NTdk"
+    },
+    {
+      "strat": "base64",
+      "rezultat": "464c41477b73747261747572696c655f61755f666f73745f6465636f646174657d"
+    },
+    {
+      "strat": "hex",
+      "rezultat": "FLAG{straturile_au_fost_decodate}"
+    }
+  ],
+  "rezultat": "FLAG{straturile_au_fost_decodate}",
+  "rezultat_hex": "464c41477b73747261747572696c655f61755f666f73745f6465636f646174657d"
+}

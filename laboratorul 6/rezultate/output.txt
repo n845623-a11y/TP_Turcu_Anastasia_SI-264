@@ -1,0 +1,242 @@
+$ python probe/pregateste.py
+Probe generate in C:\Users\user\Desktop\lucrarenrutty\probe
+
+$ python arsenal/forensics/decode.py probe/mesaj.txt --fisier --iesire arsenal/forensics/fisa.json
+{
+  "strat": "url",
+  "straturi": [
+    {
+      "strat": "url",
+      "rezultat": "NDY0YzQxNDc3YjczNzQ3MjYxNzQ3NTcyNjk2YzY1NWY2MTc1NWY2NjZmNzM3NDVmNjQ2NTYzNmY2NDYxNzQ2NTdk"
+    },
+    {
+      "strat": "base64",
+      "rezultat": "464c41477b73747261747572696c655f61755f666f73745f6465636f646174657d"
+    },
+    {
+      "strat": "hex",
+      "rezultat": "FLAG{straturile_au_fost_decodate}"
+    }
+  ],
+  "rezultat": "FLAG{straturile_au_fost_decodate}",
+  "rezultat_hex": "464c41477b73747261747572696c655f61755f666f73745f6465636f646174657d"
+}
+
+$ python arsenal/forensics/decode.py probe/xor.bin --fisier --mod xor --iesire rezultate/xor.json
+{
+  "candidati": [
+    {
+      "cheie": 73,
+      "rezultat": "FLAG{xor_cu_cheia_73}",
+      "scor": 2.381
+    },
+    {
+      "cheie": 90,
+      "rezultat": "U_RThk|aLpfLp{vzrL$ n",
+      "scor": 0.4762
+    },
+    {
+      "cheie": 69,
+      "rezultat": "J@MKwtc~SoySodiemS;?q",
+      "scor": 0.381
+    },
+    {
+      "cheie": 79,
+      "rezultat": "@JGA}~itYesYencogY15{",
+      "scor": 0.381
+    },
+    {
+      "cheie": 88,
+      "rezultat": "W]PVji~cNrdNrytxpN&\"l",
+      "scor": 0.381
+    },
+    {
+      "cheie": 93,
+      "rezultat": "RXUSol{fKwaKw|q}uK#'i",
+      "scor": 0.381
+    },
+    {
+      "cheie": 64,
+      "rezultat": "OEHNrqf{Vj|Vjal`hV>:t",
+      "scor": 0.3333
+    },
+    {
+      "cheie": 65,
+      "rezultat": "NDIOspgzWk}Wk`maiW?;u",
+      "scor": 0.3333
+    },
+    {
+      "cheie": 70,
+      "rezultat": "ICNHtw`}PlzPlgjfnP8<r",
+      "scor": 0.3333
+    },
+    {
+      "cheie": 66,
+      "rezultat": "MGJLpsdyTh~ThcnbjT<8v",
+      "scor": 0.2857
+    },
+    {
+      "cheie": 71,
+      "rezultat": "HBOIuva|Qm{QmfkgoQ9=s",
+      "scor": 0.2857
+    },
+    {
+      "cheie": 91,
+      "rezultat": "T^SUij}`MqgMqzw{sM%!o",
+      "scor": 0.2857
+    },
+    {
+      "cheie": 82,
+      "rezultat": "]WZ\\`ctiDxnDxs~rzD,(f",
+      "scor": 0.2381
+    },
+    {
+      "cheie": 84,
+      "rezultat": "[Q\\ZferoB~hB~uxt|B*.`",
+      "scor": 0.2381
+    },
+    {
+      "cheie": 92,
+      "rezultat": "SYTRnmzgJv`Jv}p|tJ\"&h",
+      "scor": 0.2381
+    },
+    {
+      "cheie": 72,
+      "rezultat": "GM@Fzyns^bt^bidh`^62|",
+      "scor": 0.1905
+    },
+    {
+      "cheie": 74,
+      "rezultat": "EOBDx{lq\\`v\\`kfjb\\40~",
+      "scor": 0.1429
+    },
+    {
+      "cheie": 80,
+      "rezultat": "_UX^bavkFzlFzq|pxF.*d",
+      "scor": 0.1429
+    },
+    {
+      "cheie": 76,
+      "rezultat": "CIDB~}jwZfpZfm`ldZ26x",
+      "scor": 0.0952
+    },
+    {
+      "cheie": 81,
+      "rezultat": "^TY_c`wjG{mG{p}qyG/+e",
+      "scor": 0.0952
+    },
+    {
+      "cheie": 86,
+      "rezultat": "YS^Xdgpm@|j@|wzv~@(,b",
+      "scor": 0.0476
+    }
+  ]
+}
+
+$ python arsenal/forensics/decode.py probe/hashuri.txt --fisier --mod hash --wordlist probe/wordlist.txt --iesire rezultate/hashuri.json
+{
+  "hashuri": [
+    {
+      "hash": "7588b708ad2c6da1742cb10713659bdf",
+      "algoritm": "md5",
+      "parola": "laborator6"
+    },
+    {
+      "hash": "77862b117c20a39a99f3378e642ea59193c16dab",
+      "algoritm": "sha1",
+      "parola": "parola123"
+    },
+    {
+      "hash": "f7f7305d27a7a955fa5386b823ea5c6f1b2a9ab47332f4a1cd47b95117fcb890",
+      "algoritm": "sha256",
+      "parola": "securitate"
+    }
+  ]
+}
+
+$ python arsenal/forensics/forensics.py
+{
+  "tipuri": {
+    "foto.jpg": "jpeg",
+    "ascuns.png": "png"
+  },
+  "strings": [
+    "IHDR",
+    "IDATx",
+    "@]m\\",
+    "B`s~5xg",
+    "u@_`3",
+    "^a6uk",
+    "pAS`",
+    "E]9\"",
+    "^F'uk",
+    "cu=Q",
+    "3,@R`",
+    "v7Q7",
+    "?wL`",
+    "v7Q7",
+    "|%0z",
+    "V`to7",
+    "I`Zu",
+    "J7i!5",
+    "k!F]",
+    "CKH=",
+    "-pE])p'",
+    "##} ",
+    "Z=?\"",
+    "~D]X",
+    "nBC`",
+    "sPg>",
+    "L7oj8",
+    "Qu|4",
+    "n60v",
+    "U[u_",
+    "2oa1",
+    "e-8k",
+    "IEND",
+    "secret.txtFLAG{arhiva_ascunsa_la_coada}",
+    "secret.txtPK"
+  ],
+  "metadate": {
+    "Model": "Camera virtuala",
+    "DateTime": "2026:10:20 12:00:00",
+    "Make": "Laborator demonstrativ",
+    "GPS": {
+      "latitudine": 47.019999999999996,
+      "longitudine": 28.83
+    }
+  },
+  "arhiva": {
+    "offset": 2772,
+    "fisiere": [
+      "secret.txt"
+    ],
+    "continut": {
+      "secret.txt": "FLAG{arhiva_ascunsa_la_coada}\n"
+    }
+  }
+}
+
+$ python arsenal/forensics/lsb.py ascunde probe/foto.jpg stego.png FLAG{ascuns_in_pixeli}
+Mesaj salvat: FLAG{ascuns_in_pixeli}
+
+$ python arsenal/forensics/lsb.py dezvaluie stego.png
+FLAG{ascuns_in_pixeli}
+
+$ python -m pytest teste -v
+============================= test session starts =============================
+platform win32 -- Python 3.15.0, pytest-9.1.1, pluggy-1.7.0 -- C:\Users\user\Desktop\lucrarenrutty\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\user\Desktop\lucrarenrutty
+collecting ... collected 8 items
+
+teste/test_decode.py::TestDecode::test_base64 PASSED                     [ 12%]
+teste/test_decode.py::TestDecode::test_gps PASSED                        [ 25%]
+teste/test_decode.py::TestDecode::test_hash PASSED                       [ 37%]
+teste/test_decode.py::TestDecode::test_hex_url PASSED                    [ 50%]
+teste/test_decode.py::TestDecode::test_intrari PASSED                    [ 62%]
+teste/test_decode.py::TestDecode::test_lsb PASSED                        [ 75%]
+teste/test_decode.py::TestDecode::test_straturi PASSED                   [ 87%]
+teste/test_decode.py::TestDecode::test_xor PASSED                        [100%]
+
+============================== 8 passed in 0.23s ==============================
