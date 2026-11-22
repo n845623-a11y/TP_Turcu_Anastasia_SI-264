@@ -1,4 +1,4 @@
-from diferenta import cai_noi
+from arsenal.privesc.diferenta import cai_noi
 
 
 def test_doar_ce_e_nou():
