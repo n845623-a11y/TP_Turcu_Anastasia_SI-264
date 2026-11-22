@@ -3,7 +3,7 @@
 import argparse
 from pathlib import Path
 
-from arsenal.privesc.enum import GTFO, citeste_linii, nume
+from enum_lab import GTFO, citeste_linii, nume
 
 
 def cai(fisier):
