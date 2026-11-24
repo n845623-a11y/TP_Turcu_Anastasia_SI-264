@@ -1,0 +1,3 @@
+arsenal/forensics/probe/* -text
+reparare/probe/* -text
+reparare/test_amprente.py -text
